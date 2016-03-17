@@ -30,17 +30,6 @@ category = {} # [category] : [recipe]
 cookbook = {} # [cookbook] : [all recipes in cookbook]
 cookbookcat = {} # [cookbook] : [all categories in cookbook]
 ingredient_search = {} # [ingredient] : [all recipes containing ingredient] 
-		
-def integer_check():
-	count = 0
-	while count <= 5:
-		try:
-			v = int(raw_input("\n> "))
-		except ValueError:
-			print "\nPlease enter '1', '2', or '3':" 
-		else: 
-			count = 6
-	return v # error handling for integer
 		 
 def insertIntoDict(k, v, aDict):
 	key = string.capwords(k)
