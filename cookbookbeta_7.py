@@ -61,10 +61,10 @@ def cookbookcatkey():
 		cat = string.capwords(c)
 		b = item[3]
 		book = string.capwords(b)
-		if not book in cookbookcat:
+		if book not in cookbookcat:
 			cookbookcat[book] = [cat]
 		else:
-			if not cat in cookbookcat[book]:
+			if cat not in cookbookcat[book]:
 				cookbookcat[book].append(cat)  # adds to cookbookcat{}
 				
 def page_header(title):
@@ -83,7 +83,6 @@ def show_all(dict):
 	print "\n"
 	for key in sorted(dict):
 		print string.capwords(key)
-	print "\n"
 
 # Error Handling	
 def item_check(key, dict):
