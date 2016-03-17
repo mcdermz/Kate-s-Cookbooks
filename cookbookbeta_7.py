@@ -34,7 +34,7 @@ ingredient_search = {} # [ingredient] : [all recipes containing ingredient]
 def insertIntoDict(k, v, aDict):
 	key = string.capwords(k)
 	value = string.capwords(v)
-	if not key in aDict:
+	if key not in aDict:
 		aDict[key] = [value]
 	else: 
 		aDict[key].append(value)
